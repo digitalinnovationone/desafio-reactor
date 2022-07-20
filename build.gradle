@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'br.com.dio.desafioreactor'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext{
+    junitVersion = '5.8.2'
+    reactorVersion = '3.4.21'
+}
+
+dependencies {
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
+    implementation "io.projectreactor:reactor-core:$reactorVersion"
+    testImplementation "io.projectreactor:reactor-test:$reactorVersion"
+    testImplementation 'com.github.javafaker:javafaker:1.0.2'
+}
+
+test {
+    useJUnitPlatform()
+}
