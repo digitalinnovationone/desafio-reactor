@@ -9,4 +9,7 @@ Para começarmos a nos habituar com programação reativa criamos esse projeto c
  * **Question 3**: Verifica se o usuário passado é valido, caso seja retorna void, caso contrário deve disparar uma exception
     (para esse desafio vamos considerar que o usário é valido quando ele tem uma senha com mais de 8 caractéres).
 
-Para fazer a verificação usando os testes rode o comando *gradle test* ( considerando que você tenha o gradle instalado em seu computador)
+Para fazer a verificação usando os testes, rode o comando:
+```shell
+./gradlew test
+```
